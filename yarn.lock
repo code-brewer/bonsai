@@ -75,14 +75,15 @@
   dependencies:
     "@storybook/addons" "^3.2.18"
 
-"@storybook/addon-storyshots@3.2.18":
-  version "3.2.18"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.2.18.tgz#74aecd84eadcfb0ff1a26cee506530e3e4f5a645"
+"@storybook/addon-storyshots@3.3.12":
+  version "3.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.3.12.tgz#42961a134b0231c0a41c133d9b556e63d50c0b3e"
   dependencies:
-    "@storybook/channels" "^3.2.18"
-    babel-core "^6.26.0"
+    "@storybook/channels" "^3.3.12"
     babel-runtime "^6.26.0"
+    glob "^7.1.2"
     global "^4.3.2"
+    jest-specific-snapshot "^0.3.0"
     prop-types "^15.6.0"
     read-pkg-up "^3.0.0"
 
@@ -101,6 +102,10 @@
 "@storybook/channels@^3.2.18":
   version "3.2.18"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.2.18.tgz#c5d8c4ac780c6ebb4b1c360d8faf9207fd4fbafd"
+
+"@storybook/channels@^3.3.12":
+  version "3.3.12"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.3.12.tgz#aa4106888971f9e689511093b0e6f2b569973a09"
 
 "@storybook/components@^3.2.18":
   version "3.2.18"
@@ -380,7 +385,7 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-ansi-styles@^3.0.0, ansi-styles@^3.1.0:
+ansi-styles@^3.0.0, ansi-styles@^3.1.0, ansi-styles@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.0.tgz#c159b8d5be0f9e5a6f346dab94f16ce022161b88"
   dependencies:
@@ -4897,6 +4902,15 @@ jest-diff@^20.0.3:
     jest-matcher-utils "^20.0.3"
     pretty-format "^20.0.3"
 
+jest-diff@^22.1.0:
+  version "22.1.0"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-22.1.0.tgz#0fad9d96c87b453896bf939df3dc8aac6919ac38"
+  dependencies:
+    chalk "^2.0.1"
+    diff "^3.2.0"
+    jest-get-type "^22.1.0"
+    pretty-format "^22.1.0"
+
 jest-docblock@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-20.0.3.tgz#17bea984342cc33d83c50fbe1545ea0efaa44712"
@@ -4915,6 +4929,10 @@ jest-environment-node@^20.0.3:
   dependencies:
     jest-mock "^20.0.3"
     jest-util "^20.0.3"
+
+jest-get-type@^22.1.0:
+  version "22.1.0"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-22.1.0.tgz#4e90af298ed6181edc85d2da500dbd2753e0d5a9"
 
 jest-haste-map@^20.0.4:
   version "20.0.5"
@@ -4947,6 +4965,14 @@ jest-matcher-utils@^20.0.3:
   dependencies:
     chalk "^1.1.3"
     pretty-format "^20.0.3"
+
+jest-matcher-utils@^22.1.0:
+  version "22.1.0"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-22.1.0.tgz#e164665b5d313636ac29f7f6fe9ef0a6ce04febc"
+  dependencies:
+    chalk "^2.0.1"
+    jest-get-type "^22.1.0"
+    pretty-format "^22.1.0"
 
 jest-matchers@^20.0.3:
   version "20.0.3"
@@ -5007,6 +5033,17 @@ jest-runtime@^20.0.4:
     strip-bom "3.0.0"
     yargs "^7.0.2"
 
+jest-snapshot@>=20.0.3:
+  version "22.1.2"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-22.1.2.tgz#b270cf6e3098f33aceeafda02b13eb0933dc6139"
+  dependencies:
+    chalk "^2.0.1"
+    jest-diff "^22.1.0"
+    jest-matcher-utils "^22.1.0"
+    mkdirp "^0.5.1"
+    natural-compare "^1.4.0"
+    pretty-format "^22.1.0"
+
 jest-snapshot@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-20.0.3.tgz#5b847e1adb1a4d90852a7f9f125086e187c76566"
@@ -5017,6 +5054,12 @@ jest-snapshot@^20.0.3:
     jest-util "^20.0.3"
     natural-compare "^1.4.0"
     pretty-format "^20.0.3"
+
+jest-specific-snapshot@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/jest-specific-snapshot/-/jest-specific-snapshot-0.3.0.tgz#89d37c7c2e94180c7b58bfedf9d9dc172ebd19e3"
+  dependencies:
+    jest-snapshot ">=20.0.3"
 
 jest-util@^20.0.3:
   version "20.0.3"
@@ -6679,6 +6722,13 @@ pretty-format@^20.0.3:
   dependencies:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
+
+pretty-format@^22.1.0:
+  version "22.1.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-22.1.0.tgz#2277605b40ed4529ae4db51ff62f4be817647914"
+  dependencies:
+    ansi-regex "^3.0.0"
+    ansi-styles "^3.2.0"
 
 private@^0.1.6, private@^0.1.7, private@~0.1.5:
   version "0.1.8"
